@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Курсы по ИИ</title>
+  <style>
+    body { margin:0; font-family:system-ui,Roboto,Inter,sans-serif; background:#fff; color:#1e293b; }
+    .container { max-width:1100px; margin:0 auto; padding:0 20px }
+    header { position:sticky; top:0; background:#ffffffee; border-bottom:1px solid #e2e8f0; z-index:10 }
+    nav { display:flex; align-items:center; justify-content:space-between; height:64px }
+    .logo { font-weight:700 }
+    .btn { background:#2563eb; color:#fff; padding:10px 16px; border-radius:8px; font-weight:600; cursor:pointer; text-decoration:none }
+    .btn.secondary { background:#fff; color:#2563eb; border:1px solid #2563eb }
+    .hero { padding:80px 0; text-align:center }
+    .hero h1 { font-size:42px; margin:0 0 16px }
+    .hero p { color:#64748b; max-width:720px; margin:0 auto 24px }
+    .grid { display:grid; gap:20px; grid-template-columns:repeat(3,1fr) }
+    .card { background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:20px }
+    .card h3 { margin:0 0 8px }
+    .card ul { margin:0 0 12px; padding-left:18px; color:#64748b }
+    .cta { padding:60px 0; text-align:center }
+    .section-title { font-size:28px; margin:0 0 8px }
+    .section-subtitle { color:#64748b; margin:0 0 24px }
+    footer { padding:32px 0; color:#64748b; text-align:center; border-top:1px solid #e2e8f0; margin-top:60px }
+    @media (max-width:900px) { .grid { grid-template-columns:1fr 1fr } .hero h1{ font-size:34px } }
+    @media (max-width:600px) { .grid { grid-template-columns:1fr } .hero{ padding:56px 0 } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Мой Бренд</div>
+        <div style="display:flex; gap:10px;">
+          <a class="btn secondary" href="#courses">Курсы</a>
+          <a class="btn" href="#contact">Связаться</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Герой -->
+    <section class="hero">
+      <h1>Курсы по искусственному интеллекту</h1>
+      <p>Освой ИИ с нуля или прокачай навыки: практика, кейсы, поддержка и доступ к материалам сразу после оплаты.</p>
+      <a class="btn" href="#courses">Выбрать курс</a>
+    </section>
+
+    <!-- Курсы -->
+    <section class="cta" id="courses">
+      <h2 class="section-title">Наши курсы</h2>
+      <p class="section-subtitle">Выбери программу и начни обучение прямо сейчас.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Основы ИИ</h3>
+          <p><strong>Цена: 4 900 ₽</strong></p>
+          <ul>
+            <li>Введение в искусственный интеллект</li>
+            <li>Основы Python для анализа данных</li>
+            <li>Машинное обучение: линейная регрессия, классификация</li>
+            <li>Нейросети: базовые архитектуры</li>
+            <li>Практика: создание простого чат‑бота</li>
+          </ul>
+          <a class="btn" href="https://buy.stripe.com/test_123456" target="_blank" rel="noopener">Купить курс</a>
+        </div>
+
+        <div class="card">
+          <h3>Продвинутый курс</h3>
+          <p><strong>Цена: 9 900 ₽</strong></p>
+          <ul>
+            <li>Глубокое обучение: CNN, RNN, LSTM</li>
+            <li>Компьютерное зрение: распознавание изображений</li>
+            <li>Обработка текста (NLP): анализ тональности, чат‑боты</li>
+            <li>Современные модели: GPT, трансформеры</li>
+            <li>Практика: проект по анализу данных</li>
+          </ul>
+          <a class="btn" href="https://buy.stripe.com/test_789101" target="_blank" rel="noopener">Купить курс</a>
+        </div>
+
+        <div class="card">
+          <h3>ИИ для бизнеса</h3>
+          <p><strong>Цена: 7 500 ₽</strong></p>
+          <ul>
+            <li>Автоматизация бизнес‑процессов</li>
+            <li>ИИ в маркетинге и рекламе</li>
+            <li>Прогнозирование продаж и аналитика</li>
+            <li>Рекомендательные системы</li>
+            <li>Практика: внедрение ИИ в кейс компании</li>
+          </ul>
+          <a class="btn" href="https://buy.stripe.com/test_112131" target="_blank" rel="noopener">Купить курс</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="cta">
+      <h2 class="section-title">Связаться с нами</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Имя" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Сообщение" required></textarea>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 Мой Бренд • Все права защищены</div>
+  </footer>
+
+  <script>
+    // Демо-обработка формы
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+    });
+  </script>
+</body>
+</html>
