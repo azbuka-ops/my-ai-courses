@@ -3,37 +3,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Курсы по ИИ</title>
+  <title>Современные технологии</title>
+  <!-- Подключаем строгий, но красивый шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family:system-ui,Roboto,Inter,sans-serif; background:#fff; color:#1e293b; }
-    .container { max-width:1100px; margin:0 auto; padding:0 20px }
-    header { position:sticky; top:0; background:#ffffffee; border-bottom:1px solid #e2e8f0; z-index:10 }
-    nav { display:flex; align-items:center; justify-content:space-between; height:64px }
-    .logo { font-weight:700 }
-    .btn { background:#2563eb; color:#fff; padding:10px 16px; border-radius:8px; font-weight:600; cursor:pointer; text-decoration:none }
-    .btn.secondary { background:#fff; color:#2563eb; border:1px solid #2563eb }
-    .hero { padding:80px 0; text-align:center }
-    .hero h1 { font-size:42px; margin:0 0 16px }
-    .hero p { color:#64748b; max-width:720px; margin:0 auto 24px }
-    .grid { display:grid; gap:20px; grid-template-columns:repeat(3,1fr) }
-    .card { background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:20px }
-    .card h3 { margin:0 0 8px }
-    .card ul { margin:0 0 12px; padding-left:18px; color:#64748b }
-    .cta { padding:60px 0; text-align:center }
-    .section-title { font-size:28px; margin:0 0 8px }
-    .section-subtitle { color:#64748b; margin:0 0 24px }
-    .related-course { margin-top:20px; padding:16px; border:1px dashed #2563eb; border-radius:10px; text-align:left }
-    .related-course h3 { margin:0 0 8px; color:#2563eb }
-    footer { padding:32px 0; color:#64748b; text-align:center; border-top:1px solid #e2e8f0; margin-top:60px }
-    @media (max-width:900px) { .grid { grid-template-columns:1fr 1fr } .hero h1{ font-size:34px } }
-    @media (max-width:600px) { .grid { grid-template-columns:1fr } .hero{ padding:56px 0 } }
+    body {
+      margin:0;
+      font-family:'Roboto Slab', serif; /* строгий и современный */
+      background:#fff;
+      color:#1e293b;
+    }
+    .logo {
+      font-weight:700;
+      font-size:20px;
+      font-family:'Roboto Slab', serif;
+    }
+    .hero h1 {
+      font-size:42px;
+      margin:0 0 16px;
+      font-family:'Roboto Slab', serif;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
       <nav>
-        <div class="logo">Мой Бренд</div>
+        <!-- Меняем название -->
+        <div class="logo">Современные технологии</div>
         <div style="display:flex; gap:10px;">
           <a class="btn secondary" href="#courses">Курсы</a>
           <a class="btn" href="#contact">Связаться</a>
@@ -45,90 +42,10 @@
   <main class="container">
     <!-- Герой -->
     <section class="hero">
-      <h1>Курсы по искусственному интеллекту</h1>
-      <p>Освой ИИ с нуля или прокачай навыки: практика, кейсы, поддержка и доступ к материалам сразу после оплаты.</p>
+      <h1>Современные технологии</h1>
+      <p>Освой искусственный интеллект и другие передовые направления с практикой и поддержкой.</p>
       <a class="btn" href="#courses">Выбрать курс</a>
-      <div class="related-course">
-        <h3>Связанный курс: Введение в искусственный интеллект</h3>
-        <p>Познакомься с историей ИИ и его современными направлениями.</p>
-        <a class="btn" href="https://buy.stripe.com/test_ai_intro" target="_blank">Записаться</a>
-      </div>
     </section>
 
-    <!-- Преимущества -->
-    <section aria-label="Преимущества обучения">
-      <h2 class="section-title">Почему мы</h2>
-      <p class="section-subtitle">Коротко о том, что сделает обучение эффективным.</p>
-      <div class="grid">
-        <div class="card"><h3>Практика</h3><p>Реальные проекты и задания для закрепления знаний.</p></div>
-        <div class="card"><h3>Поддержка</h3><p>Наставники и комьюнити помогут на каждом шаге.</p></div>
-        <div class="card"><h3>Результат</h3><p>Навыки, которые можно сразу применять в работе.</p></div>
-      </div>
-      <div class="related-course">
-        <h3>Связанный курс: Эффективное обучение онлайн</h3>
-        <p>Научись учиться в цифровой среде и использовать комьюнити для роста.</p>
-        <a class="btn" href="https://buy.stripe.com/test_online_learning" target="_blank">Записаться</a>
-      </div>
-    </section>
 
-    <!-- Курсы -->
-    <section class="cta" id="courses">
-      <h2 class="section-title">Наши курсы</h2>
-      <p class="section-subtitle">Выбери программу и начни обучение прямо сейчас.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Основы ИИ</h3>
-          <p><strong>Цена: 4 900 ₽</strong></p>
-          <ul>
-            <li>Введение в искусственный интеллект</li>
-            <li>Основы Python для анализа данных</li>
-            <li>Машинное обучение: линейная регрессия, классификация</li>
-            <li>Нейросети: базовые архитектуры</li>
-            <li>Практика: создание простого чат‑бота</li>
-          </ul>
-          <a class="btn" href="https://buy.stripe.com/test_123456" target="_blank">Купить курс</a>
-        </div>
-        <div class="card">
-          <h3>Продвинутый курс</h3>
-          <p><strong>Цена: 9 900 ₽</strong></p>
-          <ul>
-            <li>Глубокое обучение: CNN, RNN, LSTM</li>
-            <li>Компьютерное зрение: распознавание изображений</li>
-            <li>Обработка текста (NLP)</li>
-            <li>Современные модели: GPT, трансформеры</li>
-            <li>Практика: проект по анализу данных</li>
-          </ul>
-          <a class="btn" href="https://buy.stripe.com/test_789101" target="_blank">Купить курс</a>
-        </div>
-        <div class="card">
-          <h3>ИИ для бизнеса</h3>
-          <p><strong>Цена: 7 500 ₽</strong></p>
-          <ul>
-            <li>Автоматизация бизнес‑процессов</li>
-            <li>ИИ в маркетинге и рекламе</li>
-            <li>Прогнозирование продаж и аналитика</li>
-            <li>Рекомендательные системы</li>
-            <li>Практика: внедрение ИИ в кейс компании</li>
-          </ul>
-          <a class="btn" href="https://buy.stripe.com/test_112131" target="_blank">Купить курс</a>
-        </div>
-      </div>
-      <div class="related-course">
-        <h3>Связанный курс: Как выбрать подходящий курс по ИИ</h3>
-        <p>Определи свой уровень и выбери программу, которая даст максимум пользы.</p>
-        <a class="btn" href="https://buy.stripe.com/test_course_choice" target="_blank">Записаться</a>
-      </div>
-    </section>
-
-    <!-- Отзывы -->
-    <section class="cta" id="reviews">
-      <h2 class="section-title">Отзывы студентов</h2>
-      <div class="reviews">
-        <div class="card"><p>«Основы ИИ помогли мне создать первый проект!»</p><cite>— Анна</cite></div>
-        <div class="card"><p>«Продвинутый курс дал практические навыки работы с нейросетями.»</p><cite>— Иван</cite></div>
-      </div>
-      <div class="related-course">
-        <h3>Связанный курс: Как использовать отзывы для роста</h3>
-        <p>Научись анализировать обратную связь и улучшать продукт.</p>
-        <a class="btn" href="https://buy.stripe.com/test_feedback_course" target="_blank
 
