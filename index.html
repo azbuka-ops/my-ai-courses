@@ -22,6 +22,8 @@
     .cta { padding:60px 0; text-align:center }
     .section-title { font-size:28px; margin:0 0 8px }
     .section-subtitle { color:#64748b; margin:0 0 24px }
+    .related-course { margin-top:20px; padding:16px; border:1px dashed #2563eb; border-radius:10px; text-align:left }
+    .related-course h3 { margin:0 0 8px; color:#2563eb }
     footer { padding:32px 0; color:#64748b; text-align:center; border-top:1px solid #e2e8f0; margin-top:60px }
     @media (max-width:900px) { .grid { grid-template-columns:1fr 1fr } .hero h1{ font-size:34px } }
     @media (max-width:600px) { .grid { grid-template-columns:1fr } .hero{ padding:56px 0 } }
@@ -46,6 +48,27 @@
       <h1>Курсы по искусственному интеллекту</h1>
       <p>Освой ИИ с нуля или прокачай навыки: практика, кейсы, поддержка и доступ к материалам сразу после оплаты.</p>
       <a class="btn" href="#courses">Выбрать курс</a>
+      <div class="related-course">
+        <h3>Связанный курс: Введение в искусственный интеллект</h3>
+        <p>Познакомься с историей ИИ и его современными направлениями.</p>
+        <a class="btn" href="https://buy.stripe.com/test_ai_intro" target="_blank">Записаться</a>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section aria-label="Преимущества обучения">
+      <h2 class="section-title">Почему мы</h2>
+      <p class="section-subtitle">Коротко о том, что сделает обучение эффективным.</p>
+      <div class="grid">
+        <div class="card"><h3>Практика</h3><p>Реальные проекты и задания для закрепления знаний.</p></div>
+        <div class="card"><h3>Поддержка</h3><p>Наставники и комьюнити помогут на каждом шаге.</p></div>
+        <div class="card"><h3>Результат</h3><p>Навыки, которые можно сразу применять в работе.</p></div>
+      </div>
+      <div class="related-course">
+        <h3>Связанный курс: Эффективное обучение онлайн</h3>
+        <p>Научись учиться в цифровой среде и использовать комьюнити для роста.</p>
+        <a class="btn" href="https://buy.stripe.com/test_online_learning" target="_blank">Записаться</a>
+      </div>
     </section>
 
     <!-- Курсы -->
@@ -63,22 +86,20 @@
             <li>Нейросети: базовые архитектуры</li>
             <li>Практика: создание простого чат‑бота</li>
           </ul>
-          <a class="btn" href="https://buy.stripe.com/test_123456" target="_blank" rel="noopener">Купить курс</a>
+          <a class="btn" href="https://buy.stripe.com/test_123456" target="_blank">Купить курс</a>
         </div>
-
         <div class="card">
           <h3>Продвинутый курс</h3>
           <p><strong>Цена: 9 900 ₽</strong></p>
           <ul>
             <li>Глубокое обучение: CNN, RNN, LSTM</li>
             <li>Компьютерное зрение: распознавание изображений</li>
-            <li>Обработка текста (NLP): анализ тональности, чат‑боты</li>
+            <li>Обработка текста (NLP)</li>
             <li>Современные модели: GPT, трансформеры</li>
             <li>Практика: проект по анализу данных</li>
           </ul>
-          <a class="btn" href="https://buy.stripe.com/test_789101" target="_blank" rel="noopener">Купить курс</a>
+          <a class="btn" href="https://buy.stripe.com/test_789101" target="_blank">Купить курс</a>
         </div>
-
         <div class="card">
           <h3>ИИ для бизнеса</h3>
           <p><strong>Цена: 7 500 ₽</strong></p>
@@ -89,34 +110,25 @@
             <li>Рекомендательные системы</li>
             <li>Практика: внедрение ИИ в кейс компании</li>
           </ul>
-          <a class="btn" href="https://buy.stripe.com/test_112131" target="_blank" rel="noopener">Купить курс</a>
+          <a class="btn" href="https://buy.stripe.com/test_112131" target="_blank">Купить курс</a>
         </div>
+      </div>
+      <div class="related-course">
+        <h3>Связанный курс: Как выбрать подходящий курс по ИИ</h3>
+        <p>Определи свой уровень и выбери программу, которая даст максимум пользы.</p>
+        <a class="btn" href="https://buy.stripe.com/test_course_choice" target="_blank">Записаться</a>
       </div>
     </section>
 
-    <!-- Контакты -->
-    <section id="contact" class="cta">
-      <h2 class="section-title">Связаться с нами</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Имя" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" rows="4" placeholder="Сообщение" required></textarea>
-        <button class="btn" type="submit">Отправить</button>
-      </form>
-    </section>
-  </main>
+    <!-- Отзывы -->
+    <section class="cta" id="reviews">
+      <h2 class="section-title">Отзывы студентов</h2>
+      <div class="reviews">
+        <div class="card"><p>«Основы ИИ помогли мне создать первый проект!»</p><cite>— Анна</cite></div>
+        <div class="card"><p>«Продвинутый курс дал практические навыки работы с нейросетями.»</p><cite>— Иван</cite></div>
+      </div>
+      <div class="related-course">
+        <h3>Связанный курс: Как использовать отзывы для роста</h3>
+        <p>Научись анализировать обратную связь и улучшать продукт.</p>
+        <a class="btn" href="https://buy.stripe.com/test_feedback_course" target="_blank
 
-  <footer>
-    <div class="container">© 2025 Современные технологии • Все права защищены</div>
-  </footer>
-
-  <script>
-    //обработка формы
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
-    });
-  </script>
-</body>
-
-</html>
